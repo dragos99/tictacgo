@@ -1,0 +1,116 @@
+*[class*="fade-out-"]{
+	opacity: 0 !important;
+	transform: translateZ(0);
+}
+.fade-out-left-0{
+	animation: fade-out-left-0 .7s ease-in 0s;
+}
+.fade-out-left-1{
+	animation: fade-out-left-1 .75s ease-in .0s;
+}
+.fade-out-left-2{
+	animation: fade-out-left-2 .8s ease-in .0s;
+}
+.fade-out-left-3{
+	animation: fade-out-left-3 .85s ease-in .0s;
+}
+.fade-out-left-4{
+	animation: fade-out-left-4 .9s ease-in .0s;
+}
+.fade-out-left-5{
+	animation: fade-out-left-5 .95s ease-in .0s;
+}
+
+@keyframes fade-out-left-0{
+	0%{left: 0%; opacity: 1;}
+	5%{left: 0%; opacity: 1;}
+	100%{left: -50%; opacity: 0;}
+}
+@keyframes fade-out-left-1{
+	0%{left: 0%; opacity: 1;}
+	10%{left: 0%; opacity: 1;}
+	100%{left: -50%; opacity: 0;}
+}
+@keyframes fade-out-left-2{
+	0%{left: 0%; opacity: 1;}
+	15%{left: 0%; opacity: 1;}
+	100%{left: -50%; opacity: 0;}
+}
+@keyframes fade-out-left-3{
+	0%{left: 0%; opacity: 1;}
+	20%{left: 0%; opacity: 1;}
+	100%{left: -50%; opacity: 0;}
+}
+@keyframes fade-out-left-4{
+	0%{left: 0%; opacity: 1;}
+	25%{left: 0%; opacity: 1;}
+	100%{left: -50%; opacity: 0;}
+}
+@keyframes fade-out-left-5{
+	0%{left: 0%; opacity: 1;}
+	25%{left: 0%; opacity: 1;}
+	100%{left: -50%; opacity: 0;}
+}
+
+
+
+
+
+
+
+/* FADE IN */
+
+
+*[class*="fade-in-"]{
+	opacity: 1 !important;
+	transform: translateZ(0);
+}
+.fade-in-left-0{
+	animation: fade-in-left-0 .7s ease-out 0s;
+}
+.fade-in-left-1{
+	animation: fade-in-left-1 .75s ease-out .0s;
+}
+.fade-in-left-2{
+	animation: fade-in-left-2 .8s ease-out .0s;
+}
+.fade-in-left-3{
+	animation: fade-in-left-3 .85s ease-out .0s;
+}
+.fade-in-left-4{
+	animation: fade-in-left-4 .9s ease-out .0s;
+}
+.fade-in-left-5{
+	animation: fade-in-left-5 .95s ease-out .0s;
+}
+
+@keyframes fade-in-left-0{
+	0%{left: 50%; opacity: 0;}
+	5%{left: 50%; opacity: 0;}
+	100%{left: 0; opacity: 1;}
+}
+@keyframes fade-in-left-1{
+	0%{left: 50%; opacity: 0;}
+	10%{left: 50%; opacity: 0;}
+	100%{left: 0; opacity: 1;}
+}
+@keyframes fade-in-left-2{
+	0%{left: 50%; opacity: 0;}
+	15%{left: 50%; opacity: 0;}
+	100%{left: 0; opacity: 1;}
+}
+@keyframes fade-in-left-3{
+	0%{left: 50%; opacity: 0;}
+	20%{left: 50%; opacity: 0;}
+	100%{left: 0; opacity: 1;}
+}
+@keyframes fade-in-left-4{
+	0%{left: 50%; opacity: 0;}
+	25%{left: 50%; opacity: 0;}
+	100%{left: 0; opacity: 1;}
+}
+@keyframes fade-in-left-5{
+	0%{left: 50%; opacity: 0;}
+	25%{left: 50%; opacity: 0;}
+	100%{left: 0; opacity: 1;}
+}

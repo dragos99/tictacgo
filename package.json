@@ -1,0 +1,21 @@
+{
+  "name": "TicTacGo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "NODE_ENV=production node server",
+    "start": "NODE_ENV=production node server &> output.log &"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.7.3",
+    "express": "latest",
+    "express-session": "^1.14.1",
+    "fbgraph": "^1.3.0",
+    "helmet": "^2.1.2",
+    "mongoose": "^4.5.10"
+  },
+  "author": "Dragos Feleaga",
+  "license": "Copyright 2016 Feleaga Dragos"
+}

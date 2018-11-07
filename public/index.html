@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta name="keywords" content="Ultimate tic tac toe, tic tac go, play tic tac, best strategy game, puzzle game, strategy 2016.">
+	<meta name="robots" content="index,follow">
+
+	<title>Tic Tac Go | Home</title>
+
+	<link rel="icon" href="./img/favicon.png" alt="favicon"> 
+	<link href="./css/style.css" type="text/css" rel="stylesheet">
+	<link href="./css/themes.css" type="text/css" rel="stylesheet">
+	<link href="./css/fade-out-animations.css" type="text/css" rel="stylesheet">
+	<link href="./css/game-preview.css" type="text/css" rel="stylesheet">
+	<link href="./css/game-container.css" type="text/css" rel="stylesheet">
+	<link href="./css/settings.css" type="text/css" rel="stylesheet">
+
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Orbitron:900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<!-- HEADER  -->
+ 	<div class="header">
+
+ 		<div class="nav">
+ 			<div class="item tab-link" data-href="0">Home</div>
+ 			<div class="item tab-link" data-href="1">Play</div>
+			<div class="item tab-link" data-href="2">How to play</div>
+ 		</div>
+
+ 		<div class="nav nav-right game-actions changeable">
+ 			<div class="item level"><!-- dynamic js content --></div>
+ 			<div class="item undo-btn btn-hover-bottom">Undo</div>
+ 			<div class="item change-btn btn-hover-bottom">Quit game</div>
+ 			<div class="item settings-btn">
+ 				<img src="./img/settings-wheel-grey.png" alt="Grey settings wheel">
+ 				<img src="./img/settings-wheel-white.png" alt="White settings wheel">
+ 			</div>
+ 		</div>
+
+ 	</div>
+
+	<div class="menu-btn" onclick="openMenu(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+
+
+
+ 	<!-- HOME PAGE  -->
+ 	<section class="home-page page tab">
+ 		<div class="band left"></div>
+
+ 		<div class="container">
+
+ 			<div class="half">
+
+	 			<h1>Tic Tac Go</h1>
+	 			<h3>This is not Sudoku!</h3>
+	 			<p> Tic Tac Go is one of the most complex strategy games created in the last decade.
+	 				Through it's simplicity it's easy to learn, but  hard to master. Tic Tac Go's
+	 				style of play and learning curve is similar to the japanese game of GO, thus it's name.
+	 				So hit the play button and Go Go Tic Tac-ing</p>
+
+	 			<div class="btn play-btn btn-hover-left tab-link" data-href="1">
+	 				<span>PLAY NOW</span>
+	 			</div>
+
+		 	</div>
+
+		 	<div class="half">
+
+		 		<div class="game-preview">
+
+		 			<div class="player player-first">
+		 				<div class="player-img">
+		 					<img src="./img/bot.png" alt="Bot's avatar" style="width: 100%;">
+		 				</div>
+		 				<div class="name">You</div>
+		 			</div>
+
+		 			<div class="game-board">
+		 			</div>
+
+		 			<div class="player player-second">
+		 				<div class="player-img">
+		 					<img src="./img/player.png" alt="Player's avatar" style="width: 100%;">
+		 				</div>
+		 				<div class="name">MaxGo</div>
+		 			</div>
+
+		 			<div class="game-over">
+		 				<div class="winner"></div>
+		 				<div class="message"></div>
+		 				<div class="close">x</div>
+	 				</div>
+
+		 		</div>
+	 		</div>
+ 		</div>
+ 	</section>
+
+
+
+
+
+
+ 	<!-- PLAY PAGE -->
+ 	<section class="play-page page tab">
+ 		<div class="band right play-band changeable"></div>
+
+ 		<div class="container">
+ 			
+ 			<div class="game-options">
+ 				<h2 class="fade-in-left">Let's play</h2>
+
+ 				<div class="option-btn easy-btn btn-hover-left selected fade-in-left" data-value="2">
+ 					<span>Don't hurt me!</span>
+ 					<div class="arrow">
+ 						<img src="./img/back-arrow.png" alt="Left pointing arrow">
+ 					</div>
+ 				</div>
+
+ 				<div class="option-btn medium-btn btn-hover-left fade-in-left" data-value="4">
+ 					<span>Bring 'em on!</span>
+ 					<div class="arrow">
+ 						<img src="./img/back-arrow.png" alt="Left pointing arrow">
+ 					</div>
+ 				</div>
+
+ 				<div class="option-btn hard-btn btn-hover-left fade-in-left" data-value="6">
+ 					<span>I'm a genius!</span>
+ 					<div class="arrow">
+ 						<img src="./img/back-arrow.png" alt="Left pointing arrow">
+ 					</div>
+ 				</div>
+
+ 				<div class="option-btn-container fade-in-left">
+ 					<div class="option-btn player-first btn-hover-bottom selected" data-value="player">
+ 						<span>Player first</span>
+ 					</div>
+ 					<div class="option-btn computer-first btn-hover-bottom" data-value="bot">
+ 						<span>Computer first</span>
+ 					</div>
+ 				</div>
+
+ 				<div class="start-btn btn-hover-center fade-in-left">
+ 					<span>GO</span>
+ 				</div>
+
+			</div>
+
+			<!-- The actual game board -->
+ 			<div class="game-container changeable">
+ 				<div class="player player-first">
+	 				<div class="player-img">
+	 					<img src="./img/player.png" alt="Player's avatar" style="width: 100%;">
+	 				</div>
+	 				<div class="name">You</div>
+	 			</div>
+
+	 			<div class="game-board">
+	 			</div>
+
+	 			<div class="player player-second">
+	 				<div class="player-img">
+	 					<img src="./img/bot.png" alt="Bot's avatar" style="width: 100%;">
+	 				</div>
+	 				<div class="name">MaxGo</div>
+	 			</div>
+
+	 			<div class="game-over">
+	 				<div class="winner"></div>
+	 				<div class="message"></div>
+	 				<div class="close">x</div>
+	 			</div>
+
+ 			</div>
+ 		</div>
+ 	</section>
+
+	<!-- LEARN PAGE  -->
+ 	<section class="learn-page page tab">
+ 		<h3>Your journey to mastery begins here</h3>
+ 		<div class="row">
+ 			<div class="learn-img"><img src="./img/example-4.png" alt="Learning example 1"></div>
+ 			<div class="learn-text-container"><div class="learn-text">On each turn you take, you make a move in a square on one of the small grids. The highlighted square shows the last move that was taken.</div></div>
+ 		</div>
+ 		<div class="row">
+ 			<div class="learn-text-container"><div class="learn-text">When you get three knots or crosses in a row on a small grid, you have won that grid </div></div>
+ 			<div class="learn-img"><img src="./img/x-takes.png" alt="Learning example 1"></div>
+ 		</div>
+ 		<div class="row">
+ 			<div class="learn-img"><img src="./img/o-win.png" alt="Learning example 1"></div>
+ 			<div class="learn-text-container"><div class="learn-text">In order to win the game, you need to win three small grids on either of the rows, columns or diagonals </div></div>
+		</div>
+ 		<div class="row">
+ 			<div class="learn-text-container"><div class="learn-text">But there is one very important catch! You don’t get to choose on which of the nine small grids you play on. That’s determined by your opponent’s previous move. Whichever square he picks determines the small grid you must play in next turn. The highlighted squares are the available moves on that turn.</div></div>
+ 			<div class="learn-img"><img src="./img/example-1.png" alt="Learning example 1"></div>
+ 		</div>
+ 		<div class="row">
+ 			<div class="learn-img"><img src="./img/example-5.png" alt="Learning example 1"></div>
+ 			<div class="learn-text-container"><div class="learn-text">For example, if your opponent moves here.</div></div>
+ 		</div>
+ 		<div class="row">
+ 			<div class="learn-text-container"><div class="learn-text">You are obliged to move here.</div></div>
+ 			<div class="learn-img"><img src="./img/example-6.png" alt="Learning example 1"></div>
+ 		</div>
+ 		<div class="row last-row">
+ 			<div class="learn-img"><img src="./img/example-7.png" alt="Learning example 1"></div>
+ 			<div class="learn-text-container"><div class="learn-text">There are some special cases thought. Moves can't be placed inside small grids that have already been won. Therefore, all the free squares of the entire board are available for the next turn.</div></div>
+ 		</div>
+
+ 		<div class="ready-btn btn btn-hover-bottom  tab-link" data-href="1">
+ 			<span>Ready to play!</span>
+ 		</div>
+
+ 	</section>
+
+	 
+
+ 	<div class="settings-modal">
+ 		<div class="settings">
+ 			<span>Sound Options</span>
+
+ 			<div class="sound-option">
+ 				<span>Music: </span>
+				<label class="switch">
+				  <input type="checkbox" checked>
+				  <div class="slider round music-btn"></div>
+				</label>
+ 			</div>
+
+ 			<div class="sound-option">
+ 				<span>Sounds: </span>
+				<label class="switch ">
+				  <input type="checkbox" checked>
+				  <div class="slider round sound-btn"></div>
+				</label>
+ 			</div>
+
+ 			<!-- <div class="themes">
+	 			<div class="theme-container">
+	 				<div class="theme" data-value="neon">
+	 					<div class="theme-img">
+	 						<img src="./img/tictac.png" alt="Neon theme">
+	 					</div>
+	 					<div class="theme-name">
+	 						Neon
+	 					</div>
+	 				</div>
+	 			</div>
+
+				<div class="theme-container">
+	 				<div class="theme" data-value="pastel">
+	 					<div class="theme-img">
+	 						<img src="./img/tictac.png" alt="Pastel theme">
+	 					</div>
+	 					<div class="theme-name">
+	 						Pastel
+	 					</div>
+	 				</div>
+	 			</div>
+
+	 			<div class="theme-container">
+	 				<div class="theme" data-value="leyla">
+	 					<div class="theme-img">
+	 						<img src="./img/tictac.png" alt="Pastel theme">
+	 					</div>
+	 					<div class="theme-name">
+	 						Leyla
+	 					</div>
+	 				</div>
+	 			</div>
+	 		</div> -->
+
+	 		<div class="close-modal">
+	 			<span>X</span>
+	 		</div>
+
+ 		</div>
+ 	</div>
+
+
+<!-- My awsome scripts, dont't touch them -->
+<script src="./js/Ajax.js"></script> <!-- my own ajax implementation <<pure js>> -->
+<script src="./js/GameState.js"></script><!-- board and placing moves functions -->
+<script src="./js/Bot.js"></script> <!-- here is the bigger brain -->
+<script src="./js/Game.js"></script> <!-- ^their daddy -->
+<script src="./js/TabView.js"></script><!-- that awsome side scrolling -->
+<script src="./js/GamePreview.js"></script><!-- demo game... -->
+<script src="./js/index.js"></script> <!-- here is the brain -->
+</body>
+</html>

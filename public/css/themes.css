@@ -1,0 +1,69 @@
+/**
+ *
+ * Pastel
+ *
+ */
+
+
+/* background color */
+.play-band.pastel{
+	background: #9696fd;
+}
+
+/* background-color of cells and boxes */
+.game-container.pastel .box.x-taken , .game-container.pastel .box.o-taken, .game-container.pastel .cell{
+	background: rgba(0,0,0,.2);
+}
+/* x-taken color */
+.game-container.pastel .box.x-taken, .game-container.pastel .x-turn, .game-container.pastel .cell.x-taken{
+	color: #FFFE68;
+}
+/* o-taken color */
+.game-container.pastel .box.o-taken, .game-container.pastel .o-turn, .game-container.pastel .cell.o-taken{
+	color: #69FF68;
+}
+.game-container.pastel .cell.x-available{
+	box-shadow: 0 0 0.07vw 0.15vw #FFFE68 inset;
+}
+.game-container.pastel .cell.o-available{
+	box-shadow: 0 0 0.07vw 0.15vw #69FF68 inset;
+}
+
+.game-actions.pastel .undo-btn{
+	background-color: #69FF68;
+	color: #000;
+}
+.game-actions.pastel .change-btn{
+	background-color: #FFFE68;
+	color: #000;
+}
+
+
+/**
+ *
+ * Mono
+ *
+ */
+/* background color */
+.play-band.leyla{
+	background: #9696fd;
+}
+
+/* background-color of cells and boxes */
+.game-container.leyla .box.x-taken , .game-container.leyla .box.o-taken, .game-container.leyla .cell{
+	background: rgba(0,0,0,.2);
+}
+/* x-taken color */
+.game-container.leyla .box.x-taken, .game-container.leyla .x-turn, .game-container.leyla .cell.x-taken{
+	color: #fd9696;
+}
+/* o-taken color */
+.game-container.leyla .box.o-taken, .game-container.leyla .o-turn, .game-container.leyla .cell.o-taken{
+	color:#fdfd96;
+}
+.game-container.leyla .cell.x-available{
+	box-shadow: 0 0 0.1vw 0.2vw #fd9696 inset;
+}
+.game-container.leyla .cell.o-available{
+	box-shadow: 0 0 0.1vw 0.2vw #fdfd96 inset;
+}
